@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900;1000&family=Readex+Pro:wght@200;300;400;500;600;700&display=swap');
+:root{
+    --primary-color:#00546b;
+    --secondary-color: rgb(6, 117, 6);
+    --third-color:#fff;
+    --orange:rgb(198,88,48);
+    --gr:rgb(78, 115, 61);
+    --gr1:#76C140;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing:border-box ;
+    font-family: 'Cairo', sans-serif;
+    font-family: 'Readex Pro', sans-serif;
+    direction: rtl;
+
+  }
+
+  body{
+    overflow-x: hidden;
+  }
+    a {
+        text-decoration: none;
+        color: #fff;
+      }
+      
+      li,ul {
+        list-style: none;
+      }
+      span{
+        color: var(--orange);
+        font-weight: bold;
+      }
+   /* header  start      */
+   .img img{
+    width: 10vh;
+    margin-right: 100px;
+   }
+   header .navbar { 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 10vh;
+    width: 100%;
+    align-items: center;
+    background: #e8e7e7;
+    /* box-shadow: 0 0 10px rgba(0, 0, 0, 4);  */
+       
+  }
+  header .navbar nav{
+     display: flex; 
+     justify-content: space-between ;
+     align-items: center;
+     max-width: 1100px ;
+     margin: auto ;
+     /* padding: 1.5rem 2rem ; */
+      
+  }
+  
+  
+  header .navbar nav ul{
+    display: flex;
+    justify-content: center;
+    align-items: center ;
+    }
+    header .navbar nav ul a{
+    margin:0 10px ;
+    color:var(--primary-color);
+    font-weight: 600 ;
+    padding: 6px;
+    text-decoration: none;
+}
+  
+ul li ul.dropdown li{
+    display: block;
+  margin-bottom: 20px; 
+}
+ul li ul.dropdown{ 
+   width: 23vh; 
+   position: absolute;
+   z-index: 999;
+   display: none;
+   background-color:#e8e7e7;
+   /* align-items: center; */
+   margin-top: 7px;
+   
+   
+}
+header .navbar nav ul a:hover{
+    background:var(--secondary-color);
+    border-radius: 3px;
+    color: var(--third-color);
+   
+}
+ul li:hover ul.dropdown{
+    display: block;
+} 
+
+h2{
+    text-align: center;
+    color: var(--primary-color);
+    margin: 40px;
+}
+span{
+    color: var(--orange);
+}
+
+.pic img{
+    width:100px;
+    height: 100px;
+    border-radius: 10px;
+    margin-top: 5px;
+    padding: 5px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.356);
+}
+
+.content{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+}
+
+.content .library-info p{
+    color: var(--primary-color);
+    text-align: right;
+    padding: 10px;
+    margin:auto;
+    position: relative;
+    top:200px;
+}
+
+.content .library-info .library-pic img{
+    width:100%;
+    height:50%;
+    border:none;
+    position: relative;
+    right: 630px;
+    top:-80px;
+}
